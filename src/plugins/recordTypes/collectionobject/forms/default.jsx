@@ -44,7 +44,10 @@ const template = (configContext) => {
             </Field>
 
             <Field name="collection" />
+
             <Field name="recordStatus" />
+
+            <Field name="catalogLevel" subpath="ns2:collectionobjects_fineart" />
 
             <Field name="publishToList">
               <Field name="publishTo" />
@@ -107,6 +110,61 @@ const template = (configContext) => {
         </Field>
       </Panel>
 
+      <Panel name="prod" collapsible collapsed>
+        <Row>
+          <Col>
+            <Field name="objectProductionDateGroupList">
+              <Field name="objectProductionDateGroup" />
+            </Field>
+
+            <Field name="techniqueGroupList">
+              <Field name="techniqueGroup">
+                <Field name="technique" />
+                <Field name="techniqueType" />
+              </Field>
+            </Field>
+
+            <Field name="objectProductionPlaceGroupList">
+              <Field name="objectProductionPlaceGroup" >
+                <Field name="objectProductionPlace" />
+                <Field name="objectProductionPlaceRole" />
+              </Field>
+            </Field>
+
+            <Field name="objectProductionReasons">
+              <Field name="objectProductionReason" />
+            </Field>
+          </Col>
+
+          <Col>
+            <Field name="objectProductionPeopleGroupList">
+              <Field name="objectProductionPeopleGroup">
+                <Field name="objectProductionPeople" />
+                <Field name="objectProductionPeopleRole" />
+              </Field>
+            </Field>
+
+            <Field name="objectProductionPersonGroupList">
+              <Field name="objectProductionPersonGroup">
+                <Field name="objectProductionPerson" />
+                <Field name="objectProductionPersonRole" />
+              </Field>
+            </Field>
+
+            <Field name="objectProductionOrganizationGroupList">
+              <Field name="objectProductionOrganizationGroup">
+                <Field name="objectProductionOrganization" />
+                <Field name="objectProductionOrganizationRole" />
+              </Field>
+            </Field>
+
+            <Field name="objectProductionNote" />
+
+            <Field name="creatorDescription" subpath="ns2:collectionobjects_fineart" />
+          </Col>
+        </Row>
+      </Panel>
+
       <Panel name="desc" collapsible collapsed>
         <Row>
           <Col>
@@ -142,6 +200,8 @@ const template = (configContext) => {
             </Field>
           </Col>
         </Row>
+
+        <Field name="materialTechniqueDescription" subpath="ns2:collectionobjects_fineart" />
 
         <Field name="materialGroupList">
           <Field name="materialGroup">
@@ -310,57 +370,10 @@ const template = (configContext) => {
         </Panel>
       </Panel>
 
-      <Panel name="prod" collapsible collapsed>
-        <Row>
-          <Col>
-            <Field name="objectProductionDateGroupList">
-              <Field name="objectProductionDateGroup" />
-            </Field>
-
-            <Field name="techniqueGroupList">
-              <Field name="techniqueGroup">
-                <Field name="technique" />
-                <Field name="techniqueType" />
-              </Field>
-            </Field>
-
-            <Field name="objectProductionPlaceGroupList">
-              <Field name="objectProductionPlaceGroup" >
-                <Field name="objectProductionPlace" />
-                <Field name="objectProductionPlaceRole" />
-              </Field>
-            </Field>
-
-            <Field name="objectProductionReasons">
-              <Field name="objectProductionReason" />
-            </Field>
-          </Col>
-
-          <Col>
-            <Field name="objectProductionPeopleGroupList">
-              <Field name="objectProductionPeopleGroup">
-                <Field name="objectProductionPeople" />
-                <Field name="objectProductionPeopleRole" />
-              </Field>
-            </Field>
-
-            <Field name="objectProductionPersonGroupList">
-              <Field name="objectProductionPersonGroup">
-                <Field name="objectProductionPerson" />
-                <Field name="objectProductionPersonRole" />
-              </Field>
-            </Field>
-
-            <Field name="objectProductionOrganizationGroupList">
-              <Field name="objectProductionOrganizationGroup">
-                <Field name="objectProductionOrganization" />
-                <Field name="objectProductionOrganizationRole" />
-              </Field>
-            </Field>
-
-            <Field name="objectProductionNote" />
-          </Col>
-        </Row>
+      <Panel name="technicalSpecs" collapsible>
+        <CompoundInput subpath="ns2:collectionobjects_variablemedia">
+          {extensions.technicalSpecs.form}
+        </CompoundInput>
       </Panel>
 
       <Panel name="hist" collapsible collapsed>
@@ -505,6 +518,26 @@ const template = (configContext) => {
         </InputTable>
       </Panel>
 
+      <Panel name="reference" collapsible collapsed>
+        <Field name="referenceGroupList">
+          <Field name="referenceGroup">
+            <Field name="reference" />
+            <Field name="referenceNote" />
+          </Field>
+        </Field>
+      </Panel>
+      <Panel name="viewer" collapsible collapsed>
+        <Field name="viewersRole" />
+        <Field name="viewersPersonalExperience" />
+        <Field name="viewersPersonalResponse" />
+
+        <Field name="viewersReferences">
+          <Field name="viewersReference" />
+        </Field>
+
+        <Field name="viewersContributionNote" />
+      </Panel>
+
       <Panel name="owner" collapsible collapsed>
         <Field name="ownersPersonalExperience" />
         <Field name="ownersPersonalResponse" />
@@ -526,46 +559,6 @@ const template = (configContext) => {
         </Field>
 
         <Field name="viewersContributionNote" />
-      </Panel>
-
-      <Panel name="reference" collapsible collapsed>
-        <Field name="referenceGroupList">
-          <Field name="referenceGroup">
-            <Field name="reference" />
-            <Field name="referenceNote" />
-          </Field>
-        </Field>
-      </Panel>
-
-      <Panel name="collect" collapsible collapsed>
-        <Row>
-          <Col>
-            <Field name="fieldCollectionDateGroup" />
-
-            <Field name="fieldCollectionMethods">
-              <Field name="fieldCollectionMethod" />
-            </Field>
-
-            <Field name="fieldCollectionNote" />
-            <Field name="fieldCollectionNumber" />
-          </Col>
-
-          <Col>
-            <Field name="fieldCollectionPlace" />
-
-            <Field name="fieldCollectionSources">
-              <Field name="fieldCollectionSource" />
-            </Field>
-
-            <Field name="fieldCollectors">
-              <Field name="fieldCollector" />
-            </Field>
-
-            <Field name="fieldColEventNames">
-              <Field name="fieldColEventName" />
-            </Field>
-          </Col>
-        </Row>
       </Panel>
 
       <Panel name="hierarchy" collapsible collapsed>

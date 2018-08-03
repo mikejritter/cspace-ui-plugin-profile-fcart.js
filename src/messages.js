@@ -45,4 +45,8 @@ export default {
       We rebuild this demo site weekly so don't worry, you won't break it!
     </p>
   `,
+
+  'field.concepts_common.termDisplayName.name': 'Generic concept term',
+  'field.concepts_common.termName.name': 'Term',
+  'field.concepts_common.historicalStatus.name': 'Historical flag',
 };

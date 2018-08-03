@@ -1,9 +1,11 @@
 import fields from './fields';
+import forms from './forms';
 
 export default () => configContext => ({
-  extensions: {
-    fineart: {
+  recordTypes: {
+    concept: {
       fields: fields(configContext),
+      forms: forms(configContext),
     },
   },
 });

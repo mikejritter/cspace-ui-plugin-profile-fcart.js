@@ -90,11 +90,9 @@ const template = (configContext) => {
 
         <Cols>
           <Col>
-            <Field name="conceptRecordType" subpath="ns2:concepts_fineart" />
             <Field name="conceptTermDateGroup" subpath="ns2:concepts_fineart" />
           </Col>
           <Col>
-            <Field name="otherNameFlags" subpath="ns2:concepts_fineart" />
             <Field name="conceptRemarks" subpath="ns2:concepts_fineart" />
           </Col>
         </Cols>

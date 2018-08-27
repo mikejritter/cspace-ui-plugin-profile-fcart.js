@@ -183,12 +183,6 @@ const template = (configContext) => {
           <Col>
             <Field name="editionNumber" />
 
-            <InputTable name="age">
-              <Field name="ageQualifier" />
-              <Field name="age" />
-              <Field name="ageUnit" />
-            </InputTable>
-
             <Field name="styles">
               <Field name="style" />
             </Field>
@@ -523,17 +517,6 @@ const template = (configContext) => {
             <Field name="referenceNote" />
           </Field>
         </Field>
-      </Panel>
-      <Panel name="viewer" collapsible collapsed>
-        <Field name="viewersRole" />
-        <Field name="viewersPersonalExperience" />
-        <Field name="viewersPersonalResponse" />
-
-        <Field name="viewersReferences">
-          <Field name="viewersReference" />
-        </Field>
-
-        <Field name="viewersContributionNote" />
       </Panel>
 
       <Panel name="owner" collapsible collapsed>

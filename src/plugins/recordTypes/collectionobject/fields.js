@@ -113,6 +113,46 @@ export default (configContext) => {
             },
           },
         },
+        assocEventPeoples: {
+          assocEventPeople: {
+            [config]: {
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'concept/ethculture',
+                },
+              },
+            },
+          },
+        },
+        assocEventPlaces: {
+          assocEventPlace: {
+            [config]: {
+              view: {
+                type: AutocompleteInput,
+                props: {
+                  source: 'place/local',
+                },
+              },
+            },
+          },
+        },
+        ownershipPlace: {
+          [config]: {
+            messages: defineMessages({
+              name: {
+                id: 'field.collectionobjects_common.ownershipPlace.name',
+                defaultMessage: 'Ownership place',
+              },
+            }),
+            view: {
+              type: AutocompleteInput,
+              props: {
+                source: 'place/local',
+              },
+            },
+          },
+        },
       },
       'ns2:collectionobjects_variablemedia': {
         [config]: {

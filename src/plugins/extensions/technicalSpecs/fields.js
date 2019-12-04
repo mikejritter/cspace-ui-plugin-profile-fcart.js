@@ -5,7 +5,6 @@ export default (configContext) => {
     CompoundInput,
     TextInput,
     TermPickerInput,
-    // OptionPickerInput,
   } = configContext.inputComponents;
 
   const {
@@ -48,7 +47,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.ext.technicalSpecs.copyProvidedOnAcquisition.name',
-              defaultMessage: 'Copies provided',
+              defaultMessage: 'Copy provided',
             },
           }),
           repeating: true,
@@ -120,7 +119,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.ext.technicalSpecs.digitalWorksGroup.name',
-              defaultMessage: 'Digital works',
+              defaultMessage: 'Digital work',
             },
           }),
           repeating: true,
@@ -189,7 +188,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.ext.technicalSpecs.filmVideoComponentsGroup.name',
-              defaultMessage: 'Film and video components',
+              defaultMessage: 'Film and video component',
             },
           }),
           repeating: true,
@@ -258,7 +257,7 @@ export default (configContext) => {
           messages: defineMessages({
             name: {
               id: 'field.ext.technicalSpecs.visualPreferencesGroup.name',
-              defaultMessage: 'Visual preferences',
+              defaultMessage: 'Visual preference',
             },
           }),
           repeating: true,

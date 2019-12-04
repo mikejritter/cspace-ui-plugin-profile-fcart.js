@@ -22,9 +22,13 @@ export default (configContext) => {
       contentWorksGroup: {
         [config]: {
           messages: defineMessages({
+            fullName: {
+              id: 'field.ext.contentWorks.contentWorksGroup.fullName',
+              defaultMessage: 'Content work',
+            },
             name: {
               id: 'field.ext.contentWorks.contentWorksGroup.name',
-              defaultMessage: 'Content - Works',
+              defaultMessage: 'Work',
             },
           }),
           repeating: true,
@@ -38,9 +42,13 @@ export default (configContext) => {
         contentWork: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.ext.contentWorks.contentWork.fullName',
+                defaultMessage: 'Content work name',
+              },
               name: {
                 id: 'field.ext.contentWorks.contentWork.name',
-                defaultMessage: 'Work',
+                defaultMessage: 'Name',
               },
             }),
             view: {
@@ -54,6 +62,10 @@ export default (configContext) => {
         contentWorkType: {
           [config]: {
             messages: defineMessages({
+              fullName: {
+                id: 'field.ext.contentWorks.contentWorkType.fullName',
+                defaultMessage: 'Content work type',
+              },
               name: {
                 id: 'field.ext.contentWorks.contentWorkType.name',
                 defaultMessage: 'Type',

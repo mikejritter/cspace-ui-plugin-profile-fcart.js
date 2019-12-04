@@ -13,6 +13,10 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
+    DATA_TYPE_STRUCTURED_DATE,
+  } = configContext.dataTypes;
+
+  const {
     extensions,
   } = configContext.config;
 
@@ -32,17 +36,14 @@ export default (configContext) => {
         technicalChangesGroup: {
           [config]: {
             messages: defineMessages({
-              name: {
-                id: 'field.ext.technicalChanges.technicalChangesGroup.name',
-                defaultMessage: 'Technical changes',
+              fullName: {
+                id: 'field.ext.technicalChanges.technicalChangesGroup.fullName',
+                defaultMessage: 'Technical change',
               },
             }),
             repeating: true,
             view: {
               type: CompoundInput,
-              props: {
-                tabular: false,
-              },
             },
           },
           technicalChange: {
@@ -83,10 +84,15 @@ export default (configContext) => {
           },
           technicalChangeDate: {
             [config]: {
+              dataType: DATA_TYPE_STRUCTURED_DATE,
               messages: defineMessages({
                 fullName: {
                   id: 'field.ext.technicalChanges.technicalChangeDate.fullName',
                   defaultMessage: 'Technical change date',
+                },
+                groupName: {
+                  id: 'field.ext.technicalChanges.technicalChangeDate.groupName',
+                  defaultMessage: 'Date',
                 },
                 name: {
                   id: 'field.ext.technicalChanges.technicalChangeDate.name',
@@ -144,7 +150,7 @@ export default (configContext) => {
               messages: defineMessages({
                 fullName: {
                   id: 'field.ext.technicalChanges.newSupport.fullName',
-                  defaultMessage: 'Content work note',
+                  defaultMessage: 'Technical change new support',
                 },
                 name: {
                   id: 'field.ext.technicalChanges.newSupport.name',

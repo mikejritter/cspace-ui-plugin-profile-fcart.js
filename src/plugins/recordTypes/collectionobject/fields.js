@@ -3,9 +3,6 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     AutocompleteInput,
-    // DateInput,
-    // OptionPickerInput,
-    // StructuredDateInput,
     TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
@@ -190,7 +187,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.ext.fineart.materialTechniqueDescription.name',
-                defaultMessage: 'Material/Technique description',
+                defaultMessage: 'Material/technique description',
               },
             }),
             view: {

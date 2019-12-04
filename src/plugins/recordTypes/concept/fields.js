@@ -14,6 +14,10 @@ export default (configContext) => {
   } = configContext.configHelpers;
 
   const {
+    DATA_TYPE_STRUCTURED_DATE,
+  } = configContext.dataTypes;
+
+  const {
     extensions,
   } = configContext.config;
 
@@ -38,22 +42,23 @@ export default (configContext) => {
             ns: 'http://collectionspace.org/services/concept/domain/fineart',
           },
         },
-        conceptRecordType: {
-          [config]: {
-            messages: defineMessages({
-              name: {
-                id: 'field.concepts_fineart.conceptRecordType.name',
-                defaultMessage: 'Concept record type',
-              },
-            }),
-            view: {
-              type: TermPickerInput,
-              props: {
-                source: 'conceptrecordtype',
-              },
-            },
-          },
-        },
+        // Does not appear to be used.
+        // conceptRecordType: {
+        //   [config]: {
+        //     messages: defineMessages({
+        //       name: {
+        //         id: 'field.concepts_fineart.conceptRecordType.name',
+        //         defaultMessage: 'Concept record type',
+        //       },
+        //     }),
+        //     view: {
+        //       type: TermPickerInput,
+        //       props: {
+        //         source: 'conceptrecordtype',
+        //       },
+        //     },
+        //   },
+        // },
         otherNameFlags: {
           [config]: {
             messages: defineMessages({
@@ -72,14 +77,11 @@ export default (configContext) => {
         },
         conceptTermDateGroup: {
           [config]: {
+            dataType: DATA_TYPE_STRUCTURED_DATE,
             messages: defineMessages({
-              fullName: {
-                id: 'field.concepts_fineart.conceptTermDateGroup.fullName',
-                defaultMessage: 'Concept term date',
-              },
               name: {
                 id: 'field.concepts_fineart.conceptTermDateGroup.name',
-                defaultMessage: 'Term Date',
+                defaultMessage: 'Concept Date',
               },
             }),
             view: {
@@ -99,7 +101,7 @@ export default (configContext) => {
               messages: defineMessages({
                 name: {
                   id: 'field.concepts_fineart.relatedConceptsGroup.name',
-                  defaultMessage: 'Related concepts',
+                  defaultMessage: 'Related concept',
                 },
               }),
               repeating: true,
@@ -113,9 +115,13 @@ export default (configContext) => {
             relatedConcept: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.concepts_fineart.relatedConcept.fullName',
+                    defaultMessage: 'Related concept',
+                  },
                   name: {
                     id: 'field.concepts_fineart.relatedConcept.name',
-                    defaultMessage: 'Related concept',
+                    defaultMessage: 'Concept',
                   },
                 }),
                 view: {
@@ -129,9 +135,13 @@ export default (configContext) => {
             conceptRelationType: {
               [config]: {
                 messages: defineMessages({
+                  fullName: {
+                    id: 'field.concepts_fineart.conceptRelationType.fullName',
+                    defaultMessage: 'Related concept relation type',
+                  },
                   name: {
                     id: 'field.concepts_fineart.conceptRelationType.name',
-                    defaultMessage: 'Relationship type',
+                    defaultMessage: 'Relation type',
                   },
                 }),
                 view: {
@@ -144,10 +154,15 @@ export default (configContext) => {
             },
             conceptRelationDateGroup: {
               [config]: {
+                dataType: DATA_TYPE_STRUCTURED_DATE,
                 messages: defineMessages({
                   fullName: {
                     id: 'field.concepts_fineart.conceptRelationDateGroup.fullName',
-                    defaultMessage: 'Concept related date',
+                    defaultMessage: 'Related concept date',
+                  },
+                  groupName: {
+                    id: 'field.concepts_fineart.conceptRelationDateGroup.groupName',
+                    defaultMessage: 'Date',
                   },
                   name: {
                     id: 'field.concepts_fineart.conceptRelationDateGroup.name',
@@ -167,7 +182,7 @@ export default (configContext) => {
             messages: defineMessages({
               name: {
                 id: 'field.concepts_fineart.conceptRemarks.name',
-                defaultMessage: 'Concept remarks',
+                defaultMessage: 'Concept remark',
               },
             }),
             view: {

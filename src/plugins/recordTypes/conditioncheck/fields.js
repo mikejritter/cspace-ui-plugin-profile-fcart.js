@@ -1,5 +1,3 @@
-import { } from 'react-intl';
-
 export default (configContext) => {
   const {
     extensions,

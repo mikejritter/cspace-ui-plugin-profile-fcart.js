@@ -15,7 +15,7 @@ export default (configContext) => {
   return (
     <Cols>
       <Col>
-        <Field name="filmVideoComponentsList" >
+        <Field name="filmVideoComponentsList">
           <Field name="filmVideoComponentsGroup">
             <Field name="originalFormat" />
             <Field name="originalAudioFormat" />
@@ -24,7 +24,7 @@ export default (configContext) => {
         <Field name="copiesProvided">
           <Field name="copyProvidedOnAcquisition" />
         </Field>
-        <Field name="visualPreferencesList" >
+        <Field name="visualPreferencesList">
           <Field name="visualPreferencesGroup">
             <Field name="screenResolution" />
             <Field name="colorPalette" />
@@ -36,7 +36,7 @@ export default (configContext) => {
         <Field name="nonStandardCode" />
       </Col>
       <Col>
-        <Field name="digitalWorksList" >
+        <Field name="digitalWorksList">
           <Field name="digitalWorksGroup">
             <Field name="programmingLanguage" />
             <Field name="authoringEnvironment" />

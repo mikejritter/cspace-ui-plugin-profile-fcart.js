@@ -2,7 +2,7 @@ import forms from './forms';
 import fields from './fields';
 import messages from './messages';
 
-export default () => configContext => ({
+export default () => (configContext) => ({
   recordTypes: {
     conditioncheck: {
       messages,

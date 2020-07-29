@@ -1,5 +1,9 @@
 # Change Log
 
+## v2.1.0
+
+- - Added the Named Collection field to the Object record editor form (only if using cspace-ui version 5).
+
 ## v2.0.0
 
 v2.0.0 Adds support for CollectionSpace 6.0.

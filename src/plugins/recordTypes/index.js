@@ -4,7 +4,6 @@ import intake from './intake';
 import conditioncheck from './conditioncheck';
 import concept from './concept';
 
-
 export default [
   collectionobject,
   acquisition,

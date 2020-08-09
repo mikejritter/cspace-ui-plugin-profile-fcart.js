@@ -231,6 +231,7 @@ const template = (configContext) => {
           </Col>
         </Row>
 
+        {extensions.annotation.collectionobject.form}
         {extensions.dimension.form}
 
         <Panel name="content" collapsible collapsed>

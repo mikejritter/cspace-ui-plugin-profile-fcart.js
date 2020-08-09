@@ -3,6 +3,7 @@
  * webpack.config.js. */
 
 import { defineMessages } from 'react-intl';
+import annotationExtensionPlugin from 'cspace-ui-plugin-ext-annotation';
 import messages from './messages';
 import plugins from './plugins';
 import styles from '../styles/cspace-ui-plugin-profile/fcart.css';
@@ -23,5 +24,8 @@ export default () => ({
       version: cspaceUIPluginProfileFCart.packageVersion,
     },
   },
-  plugins: plugins.map((plugin) => plugin()),
+  plugins: [
+    annotationExtensionPlugin(),
+    ...plugins.map((plugin) => plugin()),
+  ],
 });

@@ -236,7 +236,15 @@ const template = (configContext) => {
           </Col>
         </Row>
 
-        {extensions.annotation.collectionobject.form}
+        <Field name="annotationGroupList" subpath="ns2:collectionobjects_annotation">
+          <Field name="annotationGroup">
+            <Field name="annotationType" />
+            <Field name="annotationNote" />
+            <Field name="annotationDate" />
+            <Field name="annotationAuthor" />
+          </Field>
+        </Field>
+
         {extensions.dimension.form}
 
         <Panel name="content" collapsible collapsed>

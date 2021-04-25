@@ -209,7 +209,6 @@ export default (configContext) => {
           },
         },
       },
-      ...extensions.annotation.collectionobject.fields,
     },
   };
 };

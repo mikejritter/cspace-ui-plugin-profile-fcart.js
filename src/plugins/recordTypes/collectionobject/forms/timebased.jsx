@@ -427,7 +427,7 @@ const template = (configContext) => {
         </Panel>
       </Panel>
 
-      <Panel name="technicalSpecs" collapsible>
+      <Panel name="technicalSpecs" collapsible collapsed>
         <CompoundInput subpath="ns2:collectionobjects_variablemedia">
           {extensions.technicalSpecs.form}
         </CompoundInput>

@@ -4,7 +4,7 @@
 
 ### Breaking Changes
 
-- v5.0.0 requires cspace-ui version 7. A new Time-Based Media template for object records has been added, which overrides the Time-Based Media template added in cspace-ui 7.0.0, and displays fields that exist in CollectionSpace 7.1, but not in prior versions of CollectionSpace.
+- v5.0.0 requires cspace-ui version 7.1. A new Time-Based Media template for object records has been added, which overrides the Time-Based Media template added in cspace-ui 7.0.0, and displays fields that exist in CollectionSpace 7.1, but not in prior versions of CollectionSpace.
 
 ## v4.0.0
 

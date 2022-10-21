@@ -504,7 +504,7 @@ const template = (configContext) => {
           <Col>
             <Field name="programmingLanguageGroupList">
               <Field name="programmingLanguageGroup">
-                <Field name="programmingLanguage" />
+                <Field name="programmingLanguageName" />
                 <Field name="programmingLanguageVersion" />
               </Field>
             </Field>

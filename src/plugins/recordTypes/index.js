@@ -3,6 +3,7 @@ import acquisition from './acquisition';
 import intake from './intake';
 import conditioncheck from './conditioncheck';
 import concept from './concept';
+import movement from './movement';
 
 export default [
   collectionobject,
@@ -10,4 +11,5 @@ export default [
   conditioncheck,
   intake,
   concept,
+  movement,
 ];

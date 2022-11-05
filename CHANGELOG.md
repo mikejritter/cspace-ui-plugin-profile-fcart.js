@@ -1,5 +1,9 @@
 # Change Log
 
+## v5.0.2
+
+- Adds `place/local` as an authority that can be used to populate the `currentLocation` and `normalLocation` fields in the Movement procedure.
+
 ## v5.0.0
 
 ### Breaking Changes

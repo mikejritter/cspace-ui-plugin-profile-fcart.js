@@ -38,20 +38,6 @@ const template = (configContext) => {
               </Field>
             </Field>
 
-            <Field name="responsibleDepartments">
-              <Field name="responsibleDepartment" />
-            </Field>
-
-            <Row>
-              <Field name="collection" />
-
-              <Col>
-                <Field name="namedCollections">
-                  <Field name="namedCollection" />
-                </Field>
-              </Col>
-            </Row>
-
             <Field name="recordStatus" />
 
             <Field name="catalogLevel" subpath="ns2:collectionobjects_fineart" />
@@ -69,8 +55,6 @@ const template = (configContext) => {
             <Field name="briefDescriptions">
               <Field name="briefDescription" />
             </Field>
-
-            <Field name="distinguishingFeatures" />
 
             <Field name="comments">
               <Field name="comment" />
@@ -225,13 +209,6 @@ const template = (configContext) => {
 
             <Field name="objectStatusList">
               <Field name="objectStatus" />
-            </Field>
-
-            <Field name="sex" />
-            <Field name="phase" />
-
-            <Field name="forms">
-              <Field name="form" />
             </Field>
           </Col>
 

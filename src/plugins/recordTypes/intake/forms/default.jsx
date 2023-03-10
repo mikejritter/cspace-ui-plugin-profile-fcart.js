@@ -1,5 +1,3 @@
-import { defineMessages } from 'react-intl';
-
 const template = (configContext) => {
   const {
     React,
@@ -129,12 +127,5 @@ const template = (configContext) => {
 };
 
 export default (configContext) => ({
-  messages: defineMessages({
-    name: {
-      id: 'form.intake.default.name',
-      defaultMessage: 'Standard Template',
-    },
-  }),
-  sortOrder: 0,
   template: template(configContext),
 });

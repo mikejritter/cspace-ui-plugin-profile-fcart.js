@@ -20,6 +20,12 @@ export default () => ({
           defaultMessage: 'Fine and Contemporary Art profile',
         },
       }),
+      packageName: cspaceUIPluginProfileFCart.packageName,
+      packageVersion: cspaceUIPluginProfileFCart.packageVersion,
+      buildNum: cspaceUIPluginProfileFCart.buildNum,
+      repositoryUrl: cspaceUIPluginProfileFCart.repositoryUrl,
+      // packageVersion is now preferred, but keep version for backward compatibility with older
+      // versions of cspace-ui.
       version: cspaceUIPluginProfileFCart.packageVersion,
     },
   },

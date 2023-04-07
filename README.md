@@ -1,6 +1,7 @@
 # cspace-ui-plugin-profile-fcart
 
-[![build status](https://travis-ci.org/collectionspace/cspace-ui-plugin-profile-fcart.js.svg?branch=master)](https://travis-ci.org/collectionspace/cspace-ui-plugin-profile-fcart.js)
+[![npm package](https://img.shields.io/npm/v/cspace-ui-plugin-profile-fcart.svg)](https://www.npmjs.com/package/cspace-ui-plugin-profile-fcart)
+[![continuous integration](https://github.com/collectionspace/cspace-ui-plugin-profile-fcart.js/actions/workflows/ci-js.yml/badge.svg?branch=master&event=push)](https://github.com/collectionspace/cspace-ui-plugin-profile-fcart.js/actions/workflows/ci-js.yml)
 
 Fine and Contemporary Art profile plugin for the CollectionSpace UI.
 

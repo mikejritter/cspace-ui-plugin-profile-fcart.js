@@ -1,5 +1,18 @@
 # Change Log
 
+## v6.0.0
+
+v6.0.0 adds support for CollectionSpace 7.2.
+
+### Breaking Changes
+
+The record editor form for Object records now includes the following new fields, added in CollectionSpace 7.2. To use this version of the fine and contemporary art profile with an older CollectionSpace server, these fields should be hidden; otherwise, any values entered will not be saved.
+
+- Description Level (`descriptionLevel`)
+- Production Era (`objectProductionEras/objectProductionEra`)
+- Associated Controlled Event (`assocEvent`)
+- Associated Controlled Event Type (`assocEventType`)
+
 ## v5.0.2
 
 - Adds `place/local` as an authority that can be used to populate the `currentLocation` and `normalLocation` fields in the Movement procedure.

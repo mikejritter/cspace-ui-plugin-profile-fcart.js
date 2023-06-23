@@ -108,6 +108,7 @@ const template = (configContext) => {
         <Field name="objectNameList">
           <Field name="objectNameGroup">
             <Field name="objectName" />
+            <Field name="objectNameControlled" />
             <Field name="objectNameCurrency" />
             <Field name="objectNameLevel" />
             <Field name="objectNameSystem" />
@@ -212,6 +213,7 @@ const template = (configContext) => {
         <Field name="materialGroupList">
           <Field name="materialGroup">
             <Field name="material" />
+            <Field name="materialControlled" />
             <Field name="materialComponent" />
             <Field name="materialComponentNote" />
             <Field name="materialName" />

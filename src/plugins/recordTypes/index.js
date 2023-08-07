@@ -4,6 +4,7 @@ import intake from './intake';
 import conditioncheck from './conditioncheck';
 import concept from './concept';
 import movement from './movement';
+import place from './place';
 
 export default [
   collectionobject,
@@ -12,4 +13,5 @@ export default [
   intake,
   concept,
   movement,
+  place,
 ];

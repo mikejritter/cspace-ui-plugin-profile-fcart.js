@@ -100,6 +100,16 @@ const template = (configContext) => {
           </Field>
         </Field>
 
+        <Field name="objectCountGroupList">
+          <Field name="objectCountGroup">
+            <Field name="objectCount" />
+            <Field name="objectCountType" />
+            <Field name="objectCountCountedBy" />
+            <Field name="objectCountDate" />
+            <Field name="objectCountNote" />
+          </Field>
+        </Field>
+
         <Field name="objectSignificanceGroupList">
           <Field name="objectSignificanceGroup">
             <Field name="assignedSignificance" />

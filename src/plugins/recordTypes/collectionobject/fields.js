@@ -3,6 +3,7 @@ import { defineMessages } from 'react-intl';
 export default (configContext) => {
   const {
     AutocompleteInput,
+    CompoundInput,
     TermPickerInput,
     TextInput,
   } = configContext.inputComponents;
@@ -205,6 +206,34 @@ export default (configContext) => {
             }),
             view: {
               type: TextInput,
+            },
+          },
+        },
+      },
+      'ns2:collectionobjects_objectprod_extension': {
+        [config]: {
+          service: {
+            ns: 'http://collectionspace.org/services/collectionobject/domain/objectprod_extension',
+          },
+        },
+        objectProductionPlacesVerbatim: {
+          [config]: {
+            view: {
+              type: CompoundInput,
+            },
+          },
+          objectProductionPlaceVerbatim: {
+            [config]: {
+              messages: defineMessages({
+                name: {
+                  id: 'field.collectionobjects_objectprod.objectProductionPlaceVerbatim.name',
+                  defaultMessage: 'Production place (verbatim)',
+                },
+              }),
+              repeating: true,
+              view: {
+                type: TextInput,
+              },
             },
           },
         },

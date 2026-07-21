@@ -3,6 +3,8 @@
 ## V8.3.0
 
 ### Changes
+
+- Added the Alternative Identifier group of fields (`alternativeIdentifierGroupList/alternativeIdentifierGroup`) to the record editor for Acquisitions.
 - Adds `homeLocationGroupList` to the `default`, `timebased` templates.
 
 ## V8.2.0

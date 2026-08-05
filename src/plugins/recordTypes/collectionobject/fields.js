@@ -19,6 +19,20 @@ export default (configContext) => {
   return {
     document: {
       'ns2:collectionobjects_common': {
+        homeLocationGroupList: {
+          homeLocationGroup: {
+            homeLocation: {
+              [config]: {
+                view: {
+                  type: AutocompleteInput,
+                  props: {
+                    source: 'location/local,location/offsite,organization/local,place/local',
+                  },
+                },
+              },
+            },
+          },
+        },
         objectProductionPlaceGroupList: {
           objectProductionPlaceGroup: {
             objectProductionPlace: {
